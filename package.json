@@ -1,5 +1,6 @@
 {
   "name": "scaler-react-bootcamp",
+  "homepage": "https://pf-gen.deepsompuratech.in/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +17,9 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "dep": "git push && npm run build && echo pf-gen.deepsompuratech.in > build/CNAME && npm run deploy"
   },
   "eslintConfig": {
     "extends": [
